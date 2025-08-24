@@ -1,0 +1,13 @@
+/* Carousel.css */
+.slick-dots {
+  bottom: 15px; /* Adjust position */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;   /* Inactive dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6600;  /* Active dot color */
+}

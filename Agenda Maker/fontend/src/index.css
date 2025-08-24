@@ -1,0 +1,11 @@
+/* Stop horizontal scrollbar without breaking react-slick */
+html, body { 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  
+}
+
+.slick-list { overflow: hidden; }   /* hide overflow inside the list */
+.slick-slide { outline: none; }     /* remove focus outline jiggle */
+.slick-prev, .slick-next { z-index: 2; } /* keep arrows above the image */
