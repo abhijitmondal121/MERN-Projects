@@ -53,9 +53,13 @@ export default function BasicModal({ open, handleClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/api/items", formData, {
-        headers: { "Content-Type": "application/json" },
-      });
+      const res = await axios.post(
+        "http://localhost:4000/api/items",
+        formData,
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      );
       setMessage("Item added successfully!");
       console.log("Submitted data:", res.data);
 
@@ -155,7 +159,7 @@ export default function BasicModal({ open, handleClose }) {
           >
             Submit Agenda
           </Button>
-          <Button variant="outlined">View All Agendas</Button>
+          {/* <Button variant="outlined">View All Agendas</Button> */}
         </Box>
       </Box>
     </Modal>
